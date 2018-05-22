@@ -1,0 +1,1014 @@
+wjj@wjj-virtual-machine:~/workspaceOfEclipse/ns-allinone-3.26/ns-3.26$ ./waf --run DPRExperiment
+Waf: Entering directory `/home/wjj/workspaceOfEclipse/ns-allinone-3.26/ns-3.26/build'
+[2064/2497] Compiling src/uan/model/uan-routing-dpr.cc
+[2246/2497] Linking build/libns3.26-uan-debug.so
+[2256/2497] Linking build/libns3.26-uan-test-debug.so
+[2310/2497] Linking build/src/uan/examples/ns3.26-uan-cw-example-debug
+[2348/2497] Linking build/src/uan/examples/ns3.26-uan-rc-example-debug
+[2448/2497] Linking build/libns3.26-netanim-debug.so
+[2455/2497] Linking build/examples/matrix-topology/ns3.26-matrix-topology-debug
+[2460/2497] Linking build/examples/wireless/ns3.26-mixed-wireless-debug
+[2462/2497] Linking build/src/netanim/examples/ns3.26-dumbbell-animation-debug
+[2464/2497] Linking build/src/netanim/examples/ns3.26-resources-counters-debug
+[2465/2497] Linking build/src/netanim/examples/ns3.26-wireless-animation-debug
+[2466/2497] Linking build/src/netanim/examples/ns3.26-grid-animation-debug
+[2468/2497] Linking build/examples/tcp/ns3.26-star-debug
+[2470/2497] Linking build/src/netanim/examples/ns3.26-star-animation-debug
+[2471/2497] Linking build/src/netanim/examples/ns3.26-colors-link-description-debug
+[2472/2497] Linking build/libns3.26-test-debug.so
+[2474/2497] Linking build/utils/ns3.26-print-introspected-doxygen-debug
+[2475/2497] Linking build/libns3.26-netanim-test-debug.so
+[2481/2497] Linking build/src/netanim/examples/ns3.26-uan-animation-debug
+[2482/2497] Linking build/libns3.26-test-test-debug.so
+[2483/2497] Linking build/scratch/subdir/subdir
+[2484/2497] Linking build/scratch/scratch-simulator
+[2485/2497] Linking build/scratch/DPRExperiment
+[2486/2497] Linking build/utils/ns3.26-test-runner-debug
+Waf: Leaving directory `/home/wjj/workspaceOfEclipse/ns-allinone-3.26/ns-3.26/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (21.097s)
+DPRExperiment:Run(): [INFO ] Ready simulator.
+DPRExperiment:PosConfigure(): [INFO ] sink 0 position is (130.992, , 267.996, 0)
+DPRExperiment:PosConfigure(): [INFO ] sink 1 position is (251.849, , 155.914, 0)
+DPRExperiment:PosConfigure(): [INFO ] sink 2 position is (156.393, , 182.645, 0)
+DPRExperiment:PosConfigure(): [INFO ] sink 3 position is (109.995, , 273.124, 0)
+DPRExperiment:PosConfigure(): [INFO ] sink 4 position is (279.77, , 279.688, 0)
+DPRExperiment:PosConfigure(): [INFO ] sink 5 position is (110.489, , 161.493, 0)
+DPRExperiment:PosConfigure(): [INFO ] sink 6 position is (387.361, , 451.878, 0)
+DPRExperiment:PosConfigure(): [INFO ] sink 7 position is (77.4696, , 318.832, 0)
+DPRExperiment:PosConfigure(): [INFO ] sink 8 position is (55.9913, , 120.355, 0)
+DPRExperiment:PosConfigure(): [INFO ] sink 9 position is (367.774, , 424.885, 0)
+DPRExperiment:PosConfigure(): [INFO ] node 0 position is (395.698, , 439.224, 23.7953)
+DPRExperiment:PosConfigure(): [INFO ] node 1 position is (335.282, , 417.63, 453.885)
+DPRExperiment:PosConfigure(): [INFO ] node 2 position is (478.723, , 457.943, 459.031)
+DPRExperiment:PosConfigure(): [INFO ] node 3 position is (115.96, , 166.3, 380.967)
+DPRExperiment:PosConfigure(): [INFO ] node 4 position is (136.108, , 208.392, 383.494)
+DPRExperiment:PosConfigure(): [INFO ] node 5 position is (411.915, , 405.472, 281.259)
+DPRExperiment:PosConfigure(): [INFO ] node 6 position is (79.9956, , 497.685, 59.238)
+DPRExperiment:PosConfigure(): [INFO ] node 7 position is (255.78, , 273.022, 111.073)
+DPRExperiment:PosConfigure(): [INFO ] node 8 position is (217.069, , 384.382, 88.9855)
+DPRExperiment:PosConfigure(): [INFO ] node 9 position is (34.3303, , 365.102, 397.256)
+DPRExperiment:PosConfigure(): [INFO ] node 10 position is (382.519, , 165.931, 356.525)
+DPRExperiment:PosConfigure(): [INFO ] node 11 position is (350.862, , 294.296, 68.7989)
+DPRExperiment:PosConfigure(): [INFO ] node 12 position is (222.754, , 229.255, 393.549)
+DPRExperiment:PosConfigure(): [INFO ] node 13 position is (3.42051, , 31.6585, 300.882)
+DPRExperiment:PosConfigure(): [INFO ] node 14 position is (408.175, , 170.381, 200.012)
+DPRExperiment:PosConfigure(): [INFO ] node 15 position is (269.377, , 387.877, 252.64)
+DPRExperiment:PosConfigure(): [INFO ] node 16 position is (455.454, , 315.042, 299.211)
+DPRExperiment:PosConfigure(): [INFO ] node 17 position is (142.758, , 127.612, 495.962)
+DPRExperiment:PosConfigure(): [INFO ] node 18 position is (416.799, , 249.449, 160.003)
+DPRExperiment:PosConfigure(): [INFO ] node 19 position is (102.866, , 38.8078, 125.793)
+DPRExperiment:PosConfigure(): [INFO ] node 20 position is (236.579, , 11.8731, 462.367)
+DPRExperiment:PosConfigure(): [INFO ] node 21 position is (4.25484, , 248.51, 89.7524)
+DPRExperiment:PosConfigure(): [INFO ] node 22 position is (9.00503, , 267.845, 176.255)
+DPRExperiment:PosConfigure(): [INFO ] node 23 position is (53.3111, , 454.097, 132.191)
+DPRExperiment:PosConfigure(): [INFO ] node 24 position is (104.566, , 302.163, 214.694)
+DPRExperiment:PosConfigure(): [DEBUG] Configure node mobility completed
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 0 names is Sink-0.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 1 names is Sink-1.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 2 names is Sink-2.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 3 names is Sink-3.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 4 names is Sink-4.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 5 names is Sink-5.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 6 names is Sink-6.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 7 names is Sink-7.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 8 names is Sink-8.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 9 names is Sink-9.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 10 names is node-0.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 11 names is node-1.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 12 names is node-2.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 13 names is node-3.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 14 names is node-4.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 15 names is node-5.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 16 names is node-6.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 17 names is node-7.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 18 names is node-8.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 19 names is node-9.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 20 names is node-10.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 21 names is node-11.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 22 names is node-12.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 23 names is node-13.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 24 names is node-14.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 25 names is node-15.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 26 names is node-16.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 27 names is node-17.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 28 names is node-18.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 29 names is node-19.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 30 names is node-20.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 31 names is node-21.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 32 names is node-22.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 33 names is node-23.
+0s -1 DPRExperiment:NameNodes(): [INFO ] Node id 34 names is node-24.
+02-01-00
+02-01-01
+02-01-02
+02-01-03
+02-01-04
+02-01-05
+02-01-06
+02-01-07
+02-01-08
+02-01-09
+02-01-0a
+02-01-0b
+02-01-0c
+02-01-0d
+02-01-0e
+02-01-0f
+02-01-10
+02-01-11
+02-01-12
+02-01-13
+02-01-14
+02-01-15
+02-01-16
+02-01-17
+02-01-18
+02-01-19
+02-01-1a
+02-01-1b
+02-01-1c
+02-01-1d
+02-01-1e
+02-01-1f
+02-01-20
+02-01-21
+02-01-22
+Test the nodeId 20
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25d8a60 NodeId 0 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25d9080 NodeId 1 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25d96d0 NodeId 2 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25d9e10 NodeId 3 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25da5a0 NodeId 4 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25dad30 NodeId 5 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25db4c0 NodeId 6 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25dbc50 NodeId 7 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25dc3e0 NodeId 8 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25dcb70 NodeId 9 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25dd3d0 NodeId 10 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25ddb60 NodeId 11 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25de2f0 NodeId 12 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25dea80 NodeId 13 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25df210 NodeId 14 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25df9a0 NodeId 15 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25e0130 NodeId 16 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25e08c0 NodeId 17 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25e1050 NodeId 18 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25e17e0 NodeId 19 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25e1f70 NodeId 20 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25e2700 NodeId 21 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25e2e90 NodeId 22 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25e3620 NodeId 23 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25e3db0 NodeId 24 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25e4540 NodeId 25 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25e4cd0 NodeId 26 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25e5460 NodeId 27 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25e5bf0 NodeId 28 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25e6380 NodeId 29 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25e6b10 NodeId 30 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25e72a0 NodeId 31 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25e7a30 NodeId 32 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25e81c0 NodeId 33 start
+0s -1 UanRoutingDPR:Start(): [DEBUG] 0x25e8950 NodeId 34 start
+22.9603s -1 UanRoutingDPR:SendData(): [DEBUG] 0x25e1f70 NodeId 20 send data as source
+22.9603s -1 UanRoutingDPR:SendData(): [DEBUG] SrcId: 20 NextId: 20 PacketId: 1
+22.9603s -1 UanRoutingDPR:HandleRecvData(): [DEBUG] 0x25e1f70 NodeId 20 handle received data
+22.9603s -1 UanRoutingDPR:HandleRecvData(): [INFO ]  20 m_nodeId 20 m_depth 356.525
+22.9603s -1 UanRoutingDPR:SendRequire(): [DEBUG] 0x25e1f70 NodeId 20 send require
+22.9603s -1 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e1f70 NodeId 20 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46116385329 context 24 uid 152
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46127681067 context 26 uid 154
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46127808522 context 22 uid 156
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46154786892 context 28 uid 158
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46168701323 context 30 uid 160
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46178270473 context 14 uid 162
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46179143328 context 15 uid 164
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46189060282 context 13 uid 166
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46190551226 context 25 uid 168
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46193259181 context 11 uid 170
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46197271151 context 27 uid 172
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.1164s 24 UanRoutingDPR:Recv(): [DEBUG] 0x25e3db0 NodeId 24 receive packet
+46.1164s 24 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.1164s 24 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.1164s 24 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.1164s 24 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.1164s 24 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.1164s 24 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25e3db0 NodeId 24 handle received require
+46.1164s 24 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e3db0 NodeId 24 set txPower to 190
+46.1164s 24 UanRoutingDPR:SendResponse(): [DEBUG] 0x25e3db0 NodeId 24 send response to 20
+46.1164s 24 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e3db0 NodeId 24 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46208124598 context 17 uid 175
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.1277s 26 UanRoutingDPR:Recv(): [DEBUG] 0x25e4cd0 NodeId 26 receive packet
+46.1277s 26 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.1277s 26 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.1277s 26 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.1277s 26 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.1277s 26 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.1277s 26 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25e4cd0 NodeId 26 handle received require
+46.1277s 26 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e4cd0 NodeId 26 set txPower to 190
+46.1277s 26 UanRoutingDPR:SendResponse(): [DEBUG] 0x25e4cd0 NodeId 26 send response to 20
+46.1277s 26 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e4cd0 NodeId 26 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.1278s 22 UanRoutingDPR:Recv(): [DEBUG] 0x25e2e90 NodeId 22 receive packet
+46.1278s 22 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.1278s 22 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.1278s 22 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.1278s 22 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.1278s 22 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.1278s 22 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25e2e90 NodeId 22 handle received require
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46221707766 context 21 uid 178
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46226668022 context 12 uid 180
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46237601735 context 34 uid 182
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.1548s 28 UanRoutingDPR:Recv(): [DEBUG] 0x25e5bf0 NodeId 28 receive packet
+46.1548s 28 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.1548s 28 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.1548s 28 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.1548s 28 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.1548s 28 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.1548s 28 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25e5bf0 NodeId 28 handle received require
+46.1548s 28 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e5bf0 NodeId 28 set txPower to 190
+46.1548s 28 UanRoutingDPR:SendResponse(): [DEBUG] 0x25e5bf0 NodeId 28 send response to 20
+46.1548s 28 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e5bf0 NodeId 28 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.1687s 30 UanRoutingDPR:Recv(): [DEBUG] 0x25e6b10 NodeId 30 receive packet
+46.1687s 30 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.1687s 30 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.1687s 30 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.1687s 30 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.1687s 30 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.1687s 30 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25e6b10 NodeId 30 handle received require
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46263841587 context 1 uid 185
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46265927332 context 18 uid 187
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46266737047 context 29 uid 189
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.1783s 14 UanRoutingDPR:Recv(): [DEBUG] 0x25df210 NodeId 14 receive packet
+46.1783s 14 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.1783s 14 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.1783s 14 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.1783s 14 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.1783s 14 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.1783s 14 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25df210 NodeId 14 handle received require
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.1791s 15 UanRoutingDPR:Recv(): [DEBUG] 0x25df9a0 NodeId 15 receive packet
+46.1791s 15 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.1791s 15 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.1791s 15 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.1791s 15 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.1791s 15 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.1791s 15 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25df9a0 NodeId 15 handle received require
+46.1791s 15 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25df9a0 NodeId 15 set txPower to 190
+46.1791s 15 UanRoutingDPR:SendResponse(): [DEBUG] 0x25df9a0 NodeId 15 send response to 20
+46.1791s 15 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25df9a0 NodeId 15 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46269330718 context 4 uid 192
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.1891s 13 UanRoutingDPR:Recv(): [DEBUG] 0x25dea80 NodeId 13 receive packet
+46.1891s 13 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.1891s 13 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.1891s 13 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.1891s 13 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.1891s 13 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.1891s 13 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25dea80 NodeId 13 handle received require
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46279403223 context 19 uid 194
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.1906s 25 UanRoutingDPR:Recv(): [DEBUG] 0x25e4540 NodeId 25 receive packet
+46.1906s 25 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.1906s 25 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.1906s 25 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.1906s 25 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.1906s 25 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.1906s 25 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25e4540 NodeId 25 handle received require
+46.1906s 25 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e4540 NodeId 25 set txPower to 190
+46.1906s 25 UanRoutingDPR:SendResponse(): [DEBUG] 0x25e4540 NodeId 25 send response to 20
+46.1906s 25 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e4540 NodeId 25 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46281279561 context 23 uid 197
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.1933s 11 UanRoutingDPR:Recv(): [DEBUG] 0x25ddb60 NodeId 11 receive packet
+46.1933s 11 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.1933s 11 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.1933s 11 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.1933s 11 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.1933s 11 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.1933s 11 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25ddb60 NodeId 11 handle received require
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.1973s 27 UanRoutingDPR:Recv(): [DEBUG] 0x25e5460 NodeId 27 receive packet
+46.1973s 27 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.1973s 27 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.1973s 27 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.1973s 27 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.1973s 27 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.1973s 27 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25e5460 NodeId 27 handle received require
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46292288583 context 2 uid 199
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46295328301 context 32 uid 201
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46297795977 context 10 uid 203
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.2081s 17 UanRoutingDPR:Recv(): [DEBUG] 0x25e08c0 NodeId 17 receive packet
+46.2081s 17 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.2081s 17 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.2081s 17 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.2081s 17 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.2081s 17 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.2081s 17 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25e08c0 NodeId 17 handle received require
+46.2081s 17 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e08c0 NodeId 17 set txPower to 190
+46.2081s 17 UanRoutingDPR:SendResponse(): [DEBUG] 0x25e08c0 NodeId 17 send response to 20
+46.2081s 17 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e08c0 NodeId 17 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46304536211 context 9 uid 206
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46309342127 context 0 uid 208
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46309592701 context 5 uid 210
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.2217s 21 UanRoutingDPR:Recv(): [DEBUG] 0x25e2700 NodeId 21 receive packet
+46.2217s 21 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.2217s 21 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.2217s 21 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.2217s 21 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.2217s 21 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.2217s 21 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25e2700 NodeId 21 handle received require
+46.2217s 21 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e2700 NodeId 21 set txPower to 190
+46.2217s 21 UanRoutingDPR:SendResponse(): [DEBUG] 0x25e2700 NodeId 21 send response to 20
+46.2217s 21 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e2700 NodeId 21 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46315312226 context 6 uid 213
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.2267s 12 UanRoutingDPR:Recv(): [DEBUG] 0x25de2f0 NodeId 12 receive packet
+46.2267s 12 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.2267s 12 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.2267s 12 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.2267s 12 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.2267s 12 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.2267s 12 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25de2f0 NodeId 12 handle received require
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46318194137 context 3 uid 215
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46324063328 context 31 uid 217
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.2376s 34 UanRoutingDPR:Recv(): [DEBUG] 0x25e8950 NodeId 34 receive packet
+46.2376s 34 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.2376s 34 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.2376s 34 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.2376s 34 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.2376s 34 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.2376s 34 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25e8950 NodeId 34 handle received require
+46.2376s 34 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e8950 NodeId 34 set txPower to 190
+46.2376s 34 UanRoutingDPR:SendResponse(): [DEBUG] 0x25e8950 NodeId 34 send response to 20
+46.2376s 34 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e8950 NodeId 34 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46334342480 context 8 uid 220
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46338391511 context 33 uid 222
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46339610035 context 7 uid 224
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.2638s 1 UanRoutingDPR:Recv(): [DEBUG] 0x25d9080 NodeId 1 receive packet
+46.2638s 1 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.2638s 1 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.2638s 1 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.2638s 1 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.2638s 1 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.2638s 1 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25d9080 NodeId 1 handle received require
+46.2638s 1 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25d9080 NodeId 1 set txPower to 190
+46.2638s 1 UanRoutingDPR:SendResponse(): [DEBUG] 0x25d9080 NodeId 1 send response to 20
+46.2638s 1 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25d9080 NodeId 1 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.2659s 18 UanRoutingDPR:Recv(): [DEBUG] 0x25e1050 NodeId 18 receive packet
+46.2659s 18 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.2659s 18 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.2659s 18 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.2659s 18 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.2659s 18 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.2659s 18 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25e1050 NodeId 18 handle received require
+46.2659s 18 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e1050 NodeId 18 set txPower to 190
+46.2659s 18 UanRoutingDPR:SendResponse(): [DEBUG] 0x25e1050 NodeId 18 send response to 20
+46.2659s 18 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e1050 NodeId 18 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.2667s 29 UanRoutingDPR:Recv(): [DEBUG] 0x25e6380 NodeId 29 receive packet
+46.2667s 29 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.2667s 29 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.2667s 29 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.2667s 29 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.2667s 29 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.2667s 29 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25e6380 NodeId 29 handle received require
+46.2667s 29 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e6380 NodeId 29 set txPower to 190
+46.2667s 29 UanRoutingDPR:SendResponse(): [DEBUG] 0x25e6380 NodeId 29 send response to 20
+46.2667s 29 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e6380 NodeId 29 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.2693s 4 UanRoutingDPR:Recv(): [DEBUG] 0x25da5a0 NodeId 4 receive packet
+46.2693s 4 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.2693s 4 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.2693s 4 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.2693s 4 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.2693s 4 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.2693s 4 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25da5a0 NodeId 4 handle received require
+46.2693s 4 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25da5a0 NodeId 4 set txPower to 190
+46.2693s 4 UanRoutingDPR:SendResponse(): [DEBUG] 0x25da5a0 NodeId 4 send response to 20
+46.2693s 4 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25da5a0 NodeId 4 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.2794s 19 UanRoutingDPR:Recv(): [DEBUG] 0x25e17e0 NodeId 19 receive packet
+46.2794s 19 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.2794s 19 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.2794s 19 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.2794s 19 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.2794s 19 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.2794s 19 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25e17e0 NodeId 19 handle received require
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.09 check the event id TS 46369595704 context 16 uid 230
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.2813s 23 UanRoutingDPR:Recv(): [DEBUG] 0x25e3620 NodeId 23 receive packet
+46.2813s 23 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.2813s 23 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.2813s 23 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.2813s 23 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.2813s 23 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.2813s 23 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25e3620 NodeId 23 handle received require
+46.2813s 23 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e3620 NodeId 23 set txPower to 190
+46.2813s 23 UanRoutingDPR:SendResponse(): [DEBUG] 0x25e3620 NodeId 23 send response to 20
+46.2813s 23 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e3620 NodeId 23 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.2923s 2 UanRoutingDPR:Recv(): [DEBUG] 0x25d96d0 NodeId 2 receive packet
+46.2923s 2 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.2923s 2 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.2923s 2 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.2923s 2 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.2923s 2 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.2923s 2 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25d96d0 NodeId 2 handle received require
+46.2923s 2 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25d96d0 NodeId 2 set txPower to 190
+46.2923s 2 UanRoutingDPR:SendResponse(): [DEBUG] 0x25d96d0 NodeId 2 send response to 20
+46.2923s 2 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25d96d0 NodeId 2 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.2953s 32 UanRoutingDPR:Recv(): [DEBUG] 0x25e7a30 NodeId 32 receive packet
+46.2953s 32 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.2953s 32 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.2953s 32 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.2953s 32 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.2953s 32 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.2953s 32 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25e7a30 NodeId 32 handle received require
+46.2953s 32 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e7a30 NodeId 32 set txPower to 190
+46.2953s 32 UanRoutingDPR:SendResponse(): [DEBUG] 0x25e7a30 NodeId 32 send response to 20
+46.2953s 32 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e7a30 NodeId 32 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.2978s 10 UanRoutingDPR:Recv(): [DEBUG] 0x25dd3d0 NodeId 10 receive packet
+46.2978s 10 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.2978s 10 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.2978s 10 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.2978s 10 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.2978s 10 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.2978s 10 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25dd3d0 NodeId 10 handle received require
+46.2978s 10 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25dd3d0 NodeId 10 set txPower to 190
+46.2978s 10 UanRoutingDPR:SendResponse(): [DEBUG] 0x25dd3d0 NodeId 10 send response to 20
+46.2978s 10 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25dd3d0 NodeId 10 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.3045s 9 UanRoutingDPR:Recv(): [DEBUG] 0x25dcb70 NodeId 9 receive packet
+46.3045s 9 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.3045s 9 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.3045s 9 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.3045s 9 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.3045s 9 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.3045s 9 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25dcb70 NodeId 9 handle received require
+46.3045s 9 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25dcb70 NodeId 9 set txPower to 190
+46.3045s 9 UanRoutingDPR:SendResponse(): [DEBUG] 0x25dcb70 NodeId 9 send response to 20
+46.3045s 9 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25dcb70 NodeId 9 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.3093s 0 UanRoutingDPR:Recv(): [DEBUG] 0x25d8a60 NodeId 0 receive packet
+46.3093s 0 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.3093s 0 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.3093s 0 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.3093s 0 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.3093s 0 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.3093s 0 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25d8a60 NodeId 0 handle received require
+46.3093s 0 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25d8a60 NodeId 0 set txPower to 190
+46.3093s 0 UanRoutingDPR:SendResponse(): [DEBUG] 0x25d8a60 NodeId 0 send response to 20
+46.3093s 0 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25d8a60 NodeId 0 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.3096s 5 UanRoutingDPR:Recv(): [DEBUG] 0x25dad30 NodeId 5 receive packet
+46.3096s 5 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.3096s 5 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.3096s 5 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.3096s 5 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.3096s 5 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.3096s 5 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25dad30 NodeId 5 handle received require
+46.3096s 5 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25dad30 NodeId 5 set txPower to 190
+46.3096s 5 UanRoutingDPR:SendResponse(): [DEBUG] 0x25dad30 NodeId 5 send response to 20
+46.3096s 5 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25dad30 NodeId 5 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.3153s 6 UanRoutingDPR:Recv(): [DEBUG] 0x25db4c0 NodeId 6 receive packet
+46.3153s 6 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.3153s 6 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.3153s 6 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.3153s 6 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.3153s 6 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.3153s 6 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25db4c0 NodeId 6 handle received require
+46.3153s 6 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25db4c0 NodeId 6 set txPower to 190
+46.3153s 6 UanRoutingDPR:SendResponse(): [DEBUG] 0x25db4c0 NodeId 6 send response to 20
+46.3153s 6 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25db4c0 NodeId 6 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.3182s 3 UanRoutingDPR:Recv(): [DEBUG] 0x25d9e10 NodeId 3 receive packet
+46.3182s 3 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.3182s 3 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.3182s 3 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.3182s 3 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.3182s 3 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.3182s 3 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25d9e10 NodeId 3 handle received require
+46.3182s 3 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25d9e10 NodeId 3 set txPower to 190
+46.3182s 3 UanRoutingDPR:SendResponse(): [DEBUG] 0x25d9e10 NodeId 3 send response to 20
+46.3182s 3 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25d9e10 NodeId 3 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.3241s 31 UanRoutingDPR:Recv(): [DEBUG] 0x25e72a0 NodeId 31 receive packet
+46.3241s 31 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.3241s 31 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.3241s 31 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.3241s 31 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.3241s 31 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.3241s 31 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25e72a0 NodeId 31 handle received require
+46.3241s 31 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e72a0 NodeId 31 set txPower to 190
+46.3241s 31 UanRoutingDPR:SendResponse(): [DEBUG] 0x25e72a0 NodeId 31 send response to 20
+46.3241s 31 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e72a0 NodeId 31 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.3343s 8 UanRoutingDPR:Recv(): [DEBUG] 0x25dc3e0 NodeId 8 receive packet
+46.3343s 8 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.3343s 8 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.3343s 8 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.3343s 8 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.3343s 8 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.3343s 8 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25dc3e0 NodeId 8 handle received require
+46.3343s 8 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25dc3e0 NodeId 8 set txPower to 190
+46.3343s 8 UanRoutingDPR:SendResponse(): [DEBUG] 0x25dc3e0 NodeId 8 send response to 20
+46.3343s 8 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25dc3e0 NodeId 8 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.3384s 33 UanRoutingDPR:Recv(): [DEBUG] 0x25e81c0 NodeId 33 receive packet
+46.3384s 33 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.3384s 33 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.3384s 33 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.3384s 33 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.3384s 33 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.3384s 33 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25e81c0 NodeId 33 handle received require
+46.3384s 33 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e81c0 NodeId 33 set txPower to 190
+46.3384s 33 UanRoutingDPR:SendResponse(): [DEBUG] 0x25e81c0 NodeId 33 send response to 20
+46.3384s 33 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e81c0 NodeId 33 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.3396s 7 UanRoutingDPR:Recv(): [DEBUG] 0x25dbc50 NodeId 7 receive packet
+46.3396s 7 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.3396s 7 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.3396s 7 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.3396s 7 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.3396s 7 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.3396s 7 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25dbc50 NodeId 7 handle received require
+46.3396s 7 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25dbc50 NodeId 7 set txPower to 190
+46.3396s 7 UanRoutingDPR:SendResponse(): [DEBUG] 0x25dbc50 NodeId 7 send response to 20
+46.3396s 7 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25dbc50 NodeId 7 set txPower to 190
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+call back recok connect
+46.3696s 16 UanRoutingDPR:Recv(): [DEBUG] 0x25e0130 NodeId 16 receive packet
+46.3696s 16 UanRoutingDPR:Recv(): [DEBUG] Packet source is 20
+46.3696s 16 UanRoutingDPR:Recv(): [DEBUG] Packet destination is 255
+46.3696s 16 UanRoutingDPR:Recv(): [DEBUG] Packet NextHop is 255
+46.3696s 16 UanRoutingDPR:Recv(): [INFO ] This packet is delivered to this node
+46.3696s 16 UanRoutingDPR:Recv(): [INFO ] This node received a require packet.
+46.3696s 16 UanRoutingDPR:HandleRecvRequire(): [DEBUG] 0x25e0130 NodeId 16 handle received require
+46.3696s 16 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e0130 NodeId 16 set txPower to 190
+46.3696s 16 UanRoutingDPR:SendResponse(): [DEBUG] 0x25e0130 NodeId 16 send response to 20
+46.3696s 16 UanRoutingDPR:SetTxPower(): [DEBUG] 0x25e0130 NodeId 16 set txPower to 190
+65.9206s -1 UanRoutingDPR:WaitRespTO(): [DEBUG] 0x25e1f70 NodeId 20 wait response time out
+65.9206s -1 UanRoutingDPR:WaitRespTO(): [INFO ] Node: 20 can't forward the packet (src : 4868 packetId: 1)
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46154786892 context 28 uid 158
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92398792689 context 28 uid 320
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46179143328 context 15 uid 164
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92430001019 context 15 uid 359
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 0 context 0 uid 0
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92445213840 context 20 uid 361
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46221707766 context 21 uid 178
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92465676095 context 21 uid 401
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46208124598 context 17 uid 175
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92475524548 context 17 uid 404
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46116385329 context 24 uid 152
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92475595815 context 24 uid 406
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46226668022 context 12 uid 180
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92505795155 context 12 uid 450
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46263841587 context 1 uid 185
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92508948679 context 1 uid 452
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46193259181 context 11 uid 170
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92509435433 context 11 uid 454
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46269330718 context 4 uid 192
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92513844829 context 4 uid 456
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46127808522 context 22 uid 156
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92522380530 context 22 uid 460
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46265927332 context 18 uid 187
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92544533032 context 18 uid 503
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46297795977 context 10 uid 203
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92553897557 context 10 uid 544
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46292288583 context 2 uid 199
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92553964477 context 2 uid 546
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46304536211 context 9 uid 206
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92556907033 context 9 uid 548
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46178270473 context 14 uid 162
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92559670057 context 14 uid 551
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46237601735 context 34 uid 182
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92560304506 context 34 uid 553
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46266737047 context 29 uid 189
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92566528320 context 29 uid 558
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46189060282 context 13 uid 166
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92568590800 context 13 uid 561
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46315312226 context 6 uid 213
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92570067947 context 6 uid 563
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46168701323 context 30 uid 160
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92573626069 context 30 uid 566
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46309342127 context 0 uid 208
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92576421874 context 0 uid 568
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46309592701 context 5 uid 210
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92578603094 context 5 uid 571
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46318194137 context 3 uid 215
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92588409919 context 3 uid 617
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 92398792689 context 28 uid 320
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92596727339 context 28 uid 625
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46197271151 context 27 uid 172
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92605988831 context 27 uid 632
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46334342480 context 8 uid 220
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92611499643 context 8 uid 635
+Here is check the event
+Enter uanphygen::rxendevent
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46295328301 context 32 uid 201
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92613825485 context 32 uid 637
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46339610035 context 7 uid 224
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92615447084 context 7 uid 641
+Here is check the event
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46324063328 context 31 uid 217
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92623387594 context 31 uid 646
+Here is check the event
+Enter uanphygen::rxendevent
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 92475595815 context 24 uid 406
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92630794893 context 24 uid 655
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46281279561 context 23 uid 197
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92632501277 context 23 uid 658
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46338391511 context 33 uid 222
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92645685367 context 33 uid 822
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46279403223 context 19 uid 194
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92649692480 context 19 uid 829
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 46369595704 context 16 uid 230
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92662373136 context 16 uid 845
+Here is check the event
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 92430001019 context 15 uid 359
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92700409474 context 15 uid 1001
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 92509435433 context 11 uid 454
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92776557545 context 11 uid 1417
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 92596727339 context 28 uid 625
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92787207859 context 28 uid 1509
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 92630794893 context 24 uid 655
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92802737318 context 24 uid 1529
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Here is uan-phy-gen start recv packet check the  former event m_rxEndEvent id TS 92505795155 context 12 uid 450
+Here is uan-phy-gen start recv packet check the txdelay 0.106667 check the event id TS 92824742987 context 12 uid 1566
+Here is check the event
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Test enter uanphy::UpdatePowerConsumption
+Test enter uanphy::UpdatePowerConsumption
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+Enter uanphygen::rxendevent
+Test enter uanphy::UpdatePowerConsumption
+
