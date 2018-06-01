@@ -27,6 +27,7 @@ struct Pri{
 	uint8_t nodeId;
 	double deltaPower;
 	double priority;
+	double depth;
 };
 
 class UanRoutingDPR : public UanRouting
@@ -58,7 +59,7 @@ class UanRoutingDPR : public UanRouting
 		void Start();
 		void SendData(uint32_t nodeId, uint32_t pktNum);
 		void SendRequire();
-		void SendResponse(uint16_t destid);
+		void SendResponse(uint16_t reqNodeId, double reqDepth, double reqTxPower);
 		void HandleRecvRequire(Ptr<Packet> p);
 		void HandleRecvResponse(Ptr<Packet> p);
 		void HandleRecvData(Ptr<Packet> p);

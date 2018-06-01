@@ -94,9 +94,9 @@ UanPhyCalcSinrDefault::CalcSinrDb (Ptr<Packet> pkt,
   double totalIntDb = KpToDb (intKp + DbToKp (ambNoiseDb));
 
   NS_LOG_DEBUG ("Calculating SINR:  RxPower = " << rxPowerDb << " dB.  Number of interferers = " << arrivalList.size () << "  Interference + noise power = " << totalIntDb << " dB.  SINR = " << rxPowerDb - totalIntDb << " dB.");
-
-  return rxPowerDb - totalIntDb;
-  //return rxPowerDb;
+  //NS_LOG_DEBUG ("Interference: " << KpToDb(intKp) << "Noise: " << ambNoiseDb);
+  //return rxPowerDb - totalIntDb;
+  return rxPowerDb;
 }
 
 /*************** UanPhyCalcSinrFhFsk definition *****************/
@@ -236,14 +236,22 @@ UanPhyPerGenDefault::GetTypeId (void)
 double
 UanPhyPerGenDefault::CalcPer (Ptr<Packet> pkt, double sinrDb, UanTxMode mode)
 {
-  if (sinrDb >= m_thresh)
+  /*if (sinrDb >= m_thresh)
     {
       return 0;
     }
   else
     {
       return 1;
-    }
+    }*/
+	if (sinrDb >= 0)
+	    {
+	      return 0;
+	    }
+	  else
+	    {
+	      return 1;
+	    }
 }
 
 /*************** UanPhyPerUmodem definition *****************/
@@ -946,8 +954,10 @@ UanPhyGen::CalculateSinrDb (Ptr<Packet> pkt, Time arrTime, double rxPowerDb, Uan
   NS_LOG_INFO("rxPowerDb   : " << rxPowerDb);
   double noiseDb = m_channel->GetNoiseDbHz ( (double) mode.GetCenterFreqHz () / 1000.0) + 10 * std::log10 (mode.GetBandwidthHz ());
   double sinrDb = m_sinr->CalcSinrDb (pkt, arrTime, rxPowerDb, noiseDb, mode, pdp, m_transducer->GetArrivalList ());
-  GetRxQueue().push_back(sinrDb);
-  NS_LOG_INFO("m_rxPower in phy :" << GetRxQueue().front());
+  if(sinrDb >= 0){
+	  GetRxQueue().push_back(sinrDb);
+	  NS_LOG_INFO("m_rxPower in phy :" << GetRxQueue().front());
+  }
   return sinrDb;
 }
 

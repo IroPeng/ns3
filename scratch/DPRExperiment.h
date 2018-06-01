@@ -10,6 +10,7 @@
 
 #include "ns3/uan-module.h"
 #include "ns3/stats-module.h"
+#include "ns3/network-module.h"
 #include "ns3/core-module.h"
 #include "ns3/mobility-module.h"
 #include "ns3/applications-module.h"

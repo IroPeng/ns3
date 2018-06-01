@@ -112,7 +112,7 @@ DPRExperiment::CreateDevices()
 
 	//Phy configure
 	//Phy
-	std::string perModel = "ns3::UanPhyGen";
+	std::string perModel = "ns3::UanPhyPerGenDefault";
 	std::string sinrModel = "ns3::UanPhyCalcSinrDefault";
 	ObjectFactory obf;
 	obf.SetTypeId (perModel);
@@ -133,9 +133,10 @@ DPRExperiment::CreateDevices()
 	//mac
 	//uanHelper.SetMac("ns3::UanMacAloha");
 	//channel
-	Ptr<UanPropModelIdeal> ideal = CreateObject<UanPropModelIdeal>();
+	Ptr<UanPropModelThorp> prop = CreateObjectWithAttributes<UanPropModelThorp>();
+	//Ptr<UanPropModelIdeal> prop = CreateObject<UanPropModelIdeal>();
 	Ptr<UanChannel> channel = CreateObjectWithAttributes<UanChannel>("PropagationModel",
-			PointerValue(ideal));
+			PointerValue(prop));
 	sinksDevices = uanHelper.Install(sinks, channel);
 	nodesDevices = uanHelper.Install(nodes, channel);
 	bNodesDevices = uanHelper.Install(bNodes, channel);
@@ -232,7 +233,7 @@ main (int argc, char **argv)
 {
 	LogComponentEnable ("DPRExperiment",LOG_LEVEL_INFO);
 	LogComponentEnable ("UanRoutingDPR",LOG_LEVEL_INFO);
-//	LogComponentEnable ("UanPhyGen",LOG_LEVEL_INFO);
+	LogComponentEnable ("UanPhyGen",LOG_LEVEL_INFO);
 //	LogComponentEnable ("UanPhyDual",LOG_LEVEL_INFO);
 	/*LogComponentEnable ("UanRoutingHeader",LOG_LEVEL_INFO);
 	LogComponentEnable ("UanL3Protocol",LOG_LEVEL_ALL);

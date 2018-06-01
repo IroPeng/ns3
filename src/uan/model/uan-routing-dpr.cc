@@ -91,7 +91,7 @@ UanRoutingDPR::SendRequire()
 	reqh.SetNodeId(m_nodeId);
 	reqh.SetSenderDepth(m_depth);
 	reqh.SetDeltaDepth(m_deltaDepth);
-	SetTxPower(100);
+	SetTxPower(80);
 	reqh.SetSendPower(m_txPower);
 	pkt->AddHeader(reqh);
 	TypeHeader th;
@@ -109,13 +109,13 @@ UanRoutingDPR::SendRequire()
 }
 
 void
-UanRoutingDPR::SendResponse(uint16_t destid)
+UanRoutingDPR::SendResponse(uint16_t reqNodeId, double reqDepth, double reqTxPower)
 {
-	NS_LOG_INFO("Node " << m_nodeId << "(" << m_depth << "m)" << " send response to " << destid);
+	NS_LOG_INFO("Node " << m_nodeId << "(" << m_depth << "m)" << " send response to " << reqNodeId);
 	Ptr<Packet> pkt = Create<Packet>();
 	ResponseHeader resh;
 	resh.SetNodeId(m_nodeId);
-	resh.SetDestId(destid);
+	resh.SetDestId(reqNodeId);
 	resh.SetRecvPower(m_rxPower);
 	resh.SetRecverDepth(m_depth);
 	resh.SetReEnergy(m_reEnergy);
@@ -125,11 +125,11 @@ UanRoutingDPR::SendResponse(uint16_t destid)
 	pkt->AddHeader(th);
 	UanRoutingHeader uh;
 	uh.SetSAddr(UanAddress(m_nodeId));
-	uh.SetNextHop(UanAddress(destid));
-	uh.SetDAddr(UanAddress(destid));
+	uh.SetNextHop(UanAddress(reqNodeId));
+	uh.SetDAddr(UanAddress(reqNodeId));
 	pkt->AddHeader(uh);
 	UanRoutingDPR::sendResponseNum++;
-	SendDown(pkt, UanAddress((uint8_t)destid), Seconds(0));
+	SendDown(pkt, UanAddress((uint8_t)reqNodeId), Seconds(0));
 }
 
 bool
@@ -156,7 +156,7 @@ UanRoutingDPR::Recv(Ptr<Packet> p, const UanAddress &dest)
 		if(typeHeader.GetMessageType() == TypeHeader::REQUIRE)
 		{
 			UanRoutingDPR::recvRequireNum++;
-			NS_LOG_INFO("Node " << m_nodeId << " received a require packet.");
+			NS_LOG_INFO("Node(" << m_depth << "m) " << m_nodeId << " received a require packet.");
 			m_rxPower = m_device->GetPhy()->GetRxQueue().front();
 			NS_LOG_INFO("rxQueueLength: " << m_device->GetPhy()->GetRxQueue().size());
 			NS_LOG_INFO("the rxPower of the packet in Node " << m_nodeId << "is" << m_rxPower);
@@ -199,7 +199,7 @@ UanRoutingDPR::HandleRecvRequire(Ptr<Packet> p)
 	if(reqDepth - m_depth >= reqDeltaDepth)
 	{
 		SetTxPower(reqTxPower);
-		SendResponse(reqNodeId);
+		SendResponse(reqNodeId, reqDepth, reqTxPower);
 	}
 }
 
@@ -221,6 +221,7 @@ UanRoutingDPR::HandleRecvResponse(Ptr<Packet> p)
 		pr.priority = pri;
 		pr.nodeId = resNodeId;
 		pr.deltaPower = m_txPower - resRxPower;
+		pr.depth = resDepth;
 		m_pri.push_back(pr);
 		return;
 	}else
@@ -273,7 +274,7 @@ UanRoutingDPR::WaitRespTO()
 	Pri maxPri = m_pri[0];
 	for(uint32_t i = 0; i < m_pri.size(); i++)
 	{
-		NS_LOG_INFO("candidate: " << (int)m_pri[i].nodeId << " deltaPower: " << m_pri[i].deltaPower << " priority: " << m_pri[i].priority);
+		NS_LOG_INFO("candidate: " << (int)m_pri[i].nodeId << " deltaPower: " << m_pri[i].deltaPower << " priority: " << m_pri[i].priority << "depth: " << m_pri[i].depth);
 		if(m_pri[i].priority > maxPri.priority)
 		{
 			maxPri = m_pri[i];
@@ -298,7 +299,7 @@ UanRoutingDPR::SendData(Pri maxPri)
 	uh.SetNextHop(UanAddress(maxPri.nodeId));
 	uh.SetDAddr(UanAddress(maxPri.nodeId));
 	m_pkt->AddHeader(uh);
-	SetTxPower(maxPri.deltaPower + 50);
+	SetTxPower(maxPri.deltaPower+5);
 	//SetTxPower(150);
 	UanRoutingDPR::sendDataNum++;
 	NS_LOG_INFO("Node " << m_nodeId << " send data to node " << int(maxPri.nodeId));
