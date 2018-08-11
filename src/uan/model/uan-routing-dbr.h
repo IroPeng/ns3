@@ -34,8 +34,8 @@ public:
 	//Getters and Setters
 	void SetNodeID(uint16_t nodeid) {m_nodeId = nodeid;}
 	uint16_t GetNodeID() {return m_nodeId;}
-	void SetDepth(double depth) {m_depth = depth;}
-	double GetDepth() {return m_depth;}
+	void SetDepth(uint16_t depth) {m_depth = depth;}
+	uint16_t GetDepth() {return m_depth;}
 
 public:
 	void forwardPacket(Ptr<Packet> p, double waitTime);
@@ -46,7 +46,7 @@ public:
 
 private:
 	uint16_t m_nodeId;
-	double m_depth;
+	uint16_t m_depth;
 	std::deque<uint16_t> m_pktsSent;
 	std::map<uint16_t, EventId> m_pktsToBeSend;
 	Ptr<UanIp> m_uanip;

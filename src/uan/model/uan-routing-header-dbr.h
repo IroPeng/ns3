@@ -25,11 +25,11 @@
 using namespace std;
 namespace ns3 {
 
-class DataHeader : public Header
+class DBRDataHeader : public Header
 {
 public:
-	DataHeader(uint16_t senderId = 0, uint16_t packetId = 0, uint16_t depth = 0, uint16_t deltaDepth = 0);
-	virtual ~DataHeader();
+	DBRDataHeader(uint16_t senderId = 0, uint16_t packetId = 0, uint16_t depth = 0, uint16_t deltaDepth = 0);
+	virtual ~DBRDataHeader();
 	static TypeId GetTypeId();
 
 	//inherited
@@ -40,7 +40,7 @@ public:
 	void Print (ostream &os) const;
 
 	//Setters and Getters
-	double getDepth() const {
+	uint16_t getDepth() const {
 		return m_depth;
 	}
 
@@ -64,19 +64,20 @@ public:
 		m_senderId = senderId;
 	}
 
-	double getDeltaDepth(){
+	uint16_t getDeltaDepth(){
 		return m_deltaDepth;
 	}
 
-	void setDeltaDepth(double deltaDepth){
+	void setDeltaDepth(uint16_t deltaDepth){
 		m_deltaDepth = deltaDepth;
 	}
 
+	bool operator== (DBRDataHeader const & o) const;
 private:
 	uint16_t m_senderId;
 	uint16_t m_packetId;
-	double m_depth;
-	double m_deltaDepth;
+	uint16_t m_depth;
+	uint16_t m_deltaDepth;
 };
 
 }

@@ -15,9 +15,9 @@ namespace ns3 {
 
 NS_LOG_COMPONENT_DEFINE("DBRHeader");
 
-NS_OBJECT_ENSURE_REGISTERED(DataHeader);
+NS_OBJECT_ENSURE_REGISTERED(DBRDataHeader);
 
-DataHeader::DataHeader(uint16_t senderId = 0, uint16_t packetId = 0, uint16_t depth = 0, uint16_t deltaDepth = 0)
+DBRDataHeader::DBRDataHeader(uint16_t senderId, uint16_t packetId, uint16_t depth, uint16_t deltaDepth)
 	:m_senderId(senderId),
 	 m_packetId(packetId),
 	 m_depth(depth),
@@ -26,35 +26,35 @@ DataHeader::DataHeader(uint16_t senderId = 0, uint16_t packetId = 0, uint16_t de
 	NS_LOG_FUNCTION(this);
 }
 
-DataHeader::~DataHeader()
+DBRDataHeader::~DBRDataHeader()
 {
 }
 
 TypeId
-DataHeader::GetTypeId()
+DBRDataHeader::GetTypeId()
 {
-	static TypeId tid = TypeId("ns3::DBR::DataHeader")
+	static TypeId tid = TypeId("ns3::DBR::DBRDataHeader")
 			.SetParent<Header>()
 			.SetGroupName("DBR")
-			.AddConstructor<DataHeader>()
+			.AddConstructor<DBRDataHeader>()
 		;
 	return tid;
 }
 
 TypeId
-DataHeader::GetInstanceTypeId() const
+DBRDataHeader::GetInstanceTypeId() const
 {
 	return GetTypeId();
 }
 
 uint32_t
-DataHeader::GetSerializedSize() const
+DBRDataHeader::GetSerializedSize() const
 {
-	return sizeof(uint16_t) * 3;
+	return sizeof(uint16_t) * 4;
 }
 
 void
-DataHeader::Serialize(Buffer::Iterator start) const
+DBRDataHeader::Serialize(Buffer::Iterator start) const
 {
 	NS_LOG_FUNCTION(this);
 	start.WriteHtonU16(m_senderId);
@@ -64,7 +64,7 @@ DataHeader::Serialize(Buffer::Iterator start) const
 }
 
 uint32_t
-DataHeader::Deserialize(Buffer::Iterator start)
+DBRDataHeader::Deserialize(Buffer::Iterator start)
 {
 	NS_LOG_FUNCTION(this);
 
@@ -80,7 +80,7 @@ DataHeader::Deserialize(Buffer::Iterator start)
 }
 
 void
-DataHeader::Print(ostream &os) const
+DBRDataHeader::Print(ostream &os) const
 {
 	os << "The senderId is " << m_senderId << endl;
 	os << "The packetId is " << m_packetId << endl;
@@ -89,9 +89,9 @@ DataHeader::Print(ostream &os) const
 }
 
 bool
-DataHeader::operator==(DataHeader const & o) const
+DBRDataHeader::operator==(DBRDataHeader const & o) const
 {
-	return (m_packetId == o.m_packetId && m_nextId == o.m_nextId);
+	return (m_packetId == o.m_packetId && m_senderId == o.m_senderId);
 }
 
 }

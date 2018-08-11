@@ -13,7 +13,7 @@ using namespace ns3;
 
 #define MAX_WAIT_TIME 10;
 
-NS_LOG_COMPONENT_DEFINE("UanRoutingDPR");
+NS_LOG_COMPONENT_DEFINE("UanRoutingDBR");
 NS_OBJECT_ENSURE_REGISTERED(UanRoutingDBR);
 
 uint16_t UanRoutingDBR::sendDataNum = 0;
@@ -23,8 +23,8 @@ uint16_t UanRoutingDBR::sinkRecvDataNum = 0;
 UanRoutingDBR::UanRoutingDBR()
 	:m_nodeId(0),
 	 m_depth(0),
-	 m_pktsSent(0),
-	 m_pktsToBeSend(0)
+	 m_pktsSent(0)
+	 //m_pktsToBeSend()
 {
 	NS_LOG_FUNCTION(this);
 }
@@ -35,18 +35,18 @@ UanRoutingDBR::~UanRoutingDBR()
 }
 
 TypeId
-UanRoutingDPR::GetTypeId()
+UanRoutingDBR::GetTypeId()
 {
-	static TypeId tid = TypeId("ns3::UanRoutingDPR")
+	static TypeId tid = TypeId("ns3::UanRoutingDBR")
 			.SetParent<UanRouting>()
-			.AddConstructor<UanRoutingDPR>()
+			.AddConstructor<UanRoutingDBR>()
 			.AddAttribute("NodeID", "The id of the node",
 						UintegerValue(),
-						MakeUintegerAccessor (&UanRoutingDPR::m_nodeId),
+						MakeUintegerAccessor (&UanRoutingDBR::m_nodeId),
 						MakeUintegerChecker<uint16_t> ())
 			.AddAttribute("Depth", "The depth of the node",
 						DoubleValue (),
-						MakeDoubleAccessor (&UanRoutingDPR::m_depth),
+						MakeDoubleAccessor (&UanRoutingDBR::m_depth),
 						MakeDoubleChecker<double> ())
 			;
 	return tid;
@@ -70,10 +70,10 @@ UanRoutingDBR::Recv(Ptr<Packet> p, const UanAddress &dest)
 				routingHeader.GetNextHop() == UanAddress::ConvertFrom(GetNetDevice()->GetAddress()).GetBroadcast())
 	{
 		NS_LOG_INFO("This packet is delivered to Node " << m_nodeId);
-		DataHeader dataHeader;
+		DBRDataHeader dataHeader;
 		pkt->RemoveHeader(dataHeader);
 
-		for(int i = 0; i < m_pktsSent.size(); i++){
+		for(uint32_t i = 0; i < m_pktsSent.size(); i++){
 			if(m_pktsSent[i] == dataHeader.getPacketId()){
 				UanRoutingDBR::recvDataNum++;
 				return false;
@@ -85,13 +85,14 @@ UanRoutingDBR::Recv(Ptr<Packet> p, const UanAddress &dest)
 			m_pktsSent.push_back(dataHeader.getPacketId());
 			return true;
 		} else {
-			if(std::map<uint16_t, EventId>::iterator it = m_pktsToBeSend.find(dataHeader.getPacketId())){
+			std::map<uint16_t, EventId>::iterator it = m_pktsToBeSend.find(dataHeader.getPacketId());
+			if(it != m_pktsToBeSend.end()){
 				EventId eventId = it->second;
 				eventId.Cancel();
 				m_pktsToBeSend.erase(it);
 			}
 			UanRoutingDBR::recvDataNum++;
-			if (dataHeader.getDepth() - m_depth >= dataHeader.getDeltaDepth) {
+			if (dataHeader.getDepth() - m_depth >= dataHeader.getDeltaDepth()) {
 				double deltaDepth = dataHeader.getDepth() - m_depth;
 				double waitTime = 10 * (1-deltaDepth/(double)2000);
 				forwardPacket(p, waitTime);
@@ -108,7 +109,7 @@ UanRoutingDBR::forwardPacket(Ptr<Packet> p, double waitTime)
 	NS_LOG_INFO("Node " << m_nodeId << " forward data");
 	UanRoutingHeader routingHeader;
 	p->RemoveHeader(routingHeader);
-	DataHeader dataHeader;
+	DBRDataHeader dataHeader;
 	p->RemoveHeader(dataHeader);
 	dataHeader.setSenderId(m_nodeId);
 	dataHeader.setDepth(m_depth);
@@ -128,7 +129,7 @@ UanRoutingDBR::SendData(Ptr<Packet> p)
 	SendDown(p, UanAddress::GetBroadcast(), Seconds(0));
 	UanRoutingHeader routingHeader;
 	p->RemoveHeader(routingHeader);
-	DataHeader dataHeader;
+	DBRDataHeader dataHeader;
 	p->RemoveHeader(dataHeader);
 	uint16_t packetId = dataHeader.getPacketId();
 	std::map<uint16_t, EventId>::iterator it = m_pktsToBeSend.find(packetId);
@@ -137,7 +138,7 @@ UanRoutingDBR::SendData(Ptr<Packet> p)
 }
 
 void
-UanRoutingDPR::Start()
+UanRoutingDBR::Start()
 {
 	m_nodeId = GetNetDevice()->GetNode()->GetId();
 	Ptr<MobilityModel> mobilitymodel =  this->GetNetDevice()->GetNode()->GetObject<MobilityModel> ();
@@ -150,7 +151,7 @@ UanRoutingDBR::SendDataAsSrc(uint32_t pktNum)
 {
 	NS_LOG_INFO("Node " << m_nodeId << " send data as source, depth is " << m_depth << "m");
 	Ptr<Packet> p = Create<Packet>();
-	DataHeader dataHeader;
+	DBRDataHeader dataHeader;
 	dataHeader.setSenderId(m_nodeId);
 	dataHeader.setPacketId(pktNum);
 	dataHeader.setDepth(m_depth);
