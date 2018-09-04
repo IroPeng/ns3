@@ -28,7 +28,7 @@ namespace ns3 {
 class DBRDataHeader : public Header
 {
 public:
-	DBRDataHeader(uint16_t senderId = 0, uint16_t packetId = 0, uint16_t depth = 0, uint16_t deltaDepth = 0);
+	DBRDataHeader(uint16_t senderId = 0, uint16_t packetId = 0, uint16_t depth = 0, uint16_t deltaDepth = 0, uint16_t hop = 0);
 	virtual ~DBRDataHeader();
 	static TypeId GetTypeId();
 
@@ -64,6 +64,14 @@ public:
 		m_senderId = senderId;
 	}
 
+	uint16_t getHop() const {
+		return m_hop;
+	}
+
+	void setHop(uint16_t hop) {
+		m_hop = hop;
+	}
+
 	uint16_t getDeltaDepth(){
 		return m_deltaDepth;
 	}
@@ -76,6 +84,7 @@ public:
 private:
 	uint16_t m_senderId;
 	uint16_t m_packetId;
+	uint16_t m_hop;
 	uint16_t m_depth;
 	uint16_t m_deltaDepth;
 };

@@ -1,0 +1,52 @@
+Waf: Entering directory `/home/wjj/workspaceOfEclipse/ns-allinone-3.26/ns-3.26/build'
+[ 955/2505] Compiling scratch/PCDBRExperiment.cc
+../scratch/PCDBRExperiment.cc: In member function ‘void PCDBRExperiment::Run()’:
+../scratch/PCDBRExperiment.cc:197:43: error: ‘DPRExperiment’ has not been declared
+   Simulator::Schedule(Seconds(sendTime), &DPRExperiment::Start, this, routing, nodeId+m_sinkNum+m_nodeNum, m_pktNum);
+                                           ^
+../scratch/PCDBRExperiment.cc: In function ‘int main(int, char**)’:
+../scratch/PCDBRExperiment.cc:271:3: error: ‘DPRExperiment’ was not declared in this scope
+   DPRExperiment exp;
+   ^
+../scratch/PCDBRExperiment.cc:272:3: error: ‘std::exp’ does not have class type
+   exp.m_boundary = boundary;
+   ^
+../scratch/PCDBRExperiment.cc:273:3: error: ‘std::exp’ does not have class type
+   exp.m_nodeNum = nodeNum;
+   ^
+../scratch/PCDBRExperiment.cc:274:3: error: ‘std::exp’ does not have class type
+   exp.m_sinkNum = sinkNum;
+   ^
+../scratch/PCDBRExperiment.cc:275:3: error: ‘std::exp’ does not have class type
+   exp.m_bNodeNum = bNodeNum;
+   ^
+../scratch/PCDBRExperiment.cc:276:3: error: ‘std::exp’ does not have class type
+   exp.m_pktNum = pktNum;
+   ^
+../scratch/PCDBRExperiment.cc:277:3: error: ‘std::exp’ does not have class type
+   exp.m_simTime = simTime;
+   ^
+../scratch/PCDBRExperiment.cc:279:3: error: ‘std::exp’ does not have class type
+   exp.Run();
+   ^
+In file included from ./ns3/log.h:29:0,
+                 from ./ns3/uan-routing-test.h:18,
+                 from ./ns3/uan-l3-protocol-helper.h:19,
+                 from ./ns3/uan-module.h:17,
+                 from ../scratch/PCDBRExperiment.h:11,
+                 from ../scratch/PCDBRExperiment.cc:8:
+../scratch/PCDBRExperiment.cc:282:58: error: ‘ns3::UanRoutingPCDBR’ has not been declared
+  NS_LOG_INFO("The number of received packet is " << ns3::UanRoutingPCDBR::sinkRecvDataNum);
+                                                          ^
+./ns3/log-macros-enabled.h:163:24: note: in definition of macro ‘NS_LOG’
+           std::clog << msg << std::endl;                        \
+                        ^
+../scratch/PCDBRExperiment.cc:282:2: note: in expansion of macro ‘NS_LOG_INFO’
+  NS_LOG_INFO("The number of received packet is " << ns3::UanRoutingPCDBR::sinkRecvDataNum);
+  ^
+
+Waf: Leaving directory `/home/wjj/workspaceOfEclipse/ns-allinone-3.26/ns-3.26/build'
+Build failed
+ -> task in 'PCDBRExperiment' failed (exit status 1): 
+	{task 139878698695504: cxx PCDBRExperiment.cc -> PCDBRExperiment.cc.4.o}
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-error=deprecated-declarations', '-fstrict-aliasing', '-Wstrict-aliasing', '-pthread', '-pthread', '-I.', '-I..', '-I/usr/include/gtk-2.0', '-I/usr/lib/x86_64-linux-gnu/gtk-2.0/include', '-I/usr/include/gio-unix-2.0', '-I/usr/include/cairo', '-I/usr/include/pango-1.0', '-I/usr/include/atk-1.0', '-I/usr/include/pixman-1', '-I/usr/include/libpng12', '-I/usr/include/gdk-pixbuf-2.0', '-I/usr/include/harfbuzz', '-I/usr/include/glib-2.0', '-I/usr/lib/x86_64-linux-gnu/glib-2.0/include', '-I/usr/include/freetype2', '-I/usr/include/libxml2', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '-DHAVE_GSL=1', '-DHAVE_SQLITE3=1', '-DHAVE_GTK2=1', '-DHAVE_LIBXML2=1', '../scratch/PCDBRExperiment.cc', '-c', '-o', '/home/wjj/workspaceOfEclipse/ns-allinone-3.26/ns-3.26/build/scratch/PCDBRExperiment.cc.4.o']

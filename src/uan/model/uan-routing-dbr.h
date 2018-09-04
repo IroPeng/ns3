@@ -39,7 +39,7 @@ public:
 
 public:
 	void forwardPacket(Ptr<Packet> p, double waitTime);
-	void SendData(Ptr<Packet> p);
+	void SendData(Ptr<Packet> p, uint16_t currentPktSeq, uint16_t currentHop);
 	void Start();
 	void SendDataAsSrc(uint32_t pktNum);
 	void SetUanIp(Ptr<UanIp> uanip);
@@ -55,6 +55,7 @@ public:
 	static uint16_t sendDataNum;
 	static uint16_t recvDataNum;
 	static uint16_t sinkRecvDataNum;
+	static vector<map<int, int>> packetSituation;
 };
 
 }

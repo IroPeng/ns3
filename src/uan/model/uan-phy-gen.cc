@@ -94,9 +94,10 @@ UanPhyCalcSinrDefault::CalcSinrDb (Ptr<Packet> pkt,
   double totalIntDb = KpToDb (intKp + DbToKp (ambNoiseDb));
 
   NS_LOG_DEBUG ("Calculating SINR:  RxPower = " << rxPowerDb << " dB.  Number of interferers = " << arrivalList.size () << "  Interference + noise power = " << totalIntDb << " dB.  SINR = " << rxPowerDb - totalIntDb << " dB.");
-  //NS_LOG_DEBUG ("Interference: " << KpToDb(intKp) << "Noise: " << ambNoiseDb);
+  NS_LOG_DEBUG ("Interference: " << KpToDb(intKp) << "Noise: " << ambNoiseDb);
   //return rxPowerDb - totalIntDb;
-  return rxPowerDb;
+  NS_LOG_DEBUG ("be changed sinr is " << rxPowerDb - totalIntDb * 0.6);
+  return rxPowerDb - totalIntDb * 0.6;
 }
 
 /*************** UanPhyCalcSinrFhFsk definition *****************/

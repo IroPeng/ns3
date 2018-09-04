@@ -260,8 +260,8 @@ main (int argc, char **argv)
 	int sinkNum = 10;
 	int nodeNum = 200;
 	int bNodeNum = 20;
-	int pktNum = 1;
-	double boundary = 2000;
+	int pktNum = 10;
+	double boundary = 500;
 	double simTime = 800;
 	int SimulatorTimes = 1;
 	int count = SimulatorTimes;
@@ -276,7 +276,20 @@ main (int argc, char **argv)
 		exp.m_simTime = simTime;
 		SeedManager::SetRun(SeedManager::GetRun()+1);
 		exp.Run();
+		NS_LOG_INFO("The number of send packet is " << pktNum);
+		NS_LOG_INFO("The number of send packet all is " << ns3::UanRoutingDBR::sendDataNum);
+		NS_LOG_INFO("The number of received packet all is " << ns3::UanRoutingDBR::recvDataNum);
+		NS_LOG_INFO("The number of received packet is " << ns3::UanRoutingDBR::sinkRecvDataNum);
+		for (int i = 0; i < pktNum; i++) {
+			map<int, int> pktMap = UanRoutingDBR::packetSituation[i];
+			map<int, int>::iterator iter = pktMap.begin();
+			while(iter != pktMap.end()) {
+				cout << iter->first << " : " << iter->second;
+				iter++;
+			}
+			cout << endl;
+		}
 	    count--;
 	}
-	NS_LOG_INFO("The number of received packet is " << ns3::UanRoutingDBR::sinkRecvDataNum);
+
 }

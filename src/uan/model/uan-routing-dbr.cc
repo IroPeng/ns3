@@ -19,6 +19,7 @@ NS_OBJECT_ENSURE_REGISTERED(UanRoutingDBR);
 uint16_t UanRoutingDBR::sendDataNum = 0;
 uint16_t UanRoutingDBR::recvDataNum = 0;
 uint16_t UanRoutingDBR::sinkRecvDataNum = 0;
+vector<map<int, int>> UanRoutingDBR::packetSituation;
 
 UanRoutingDBR::UanRoutingDBR()
 	:m_nodeId(0),
@@ -69,9 +70,10 @@ UanRoutingDBR::Recv(Ptr<Packet> p, const UanAddress &dest)
 	if(routingHeader.GetNextHop() == GetNetDevice()->GetAddress() ||
 				routingHeader.GetNextHop() == UanAddress::ConvertFrom(GetNetDevice()->GetAddress()).GetBroadcast())
 	{
-		NS_LOG_INFO("This packet is delivered to Node " << m_nodeId);
 		DBRDataHeader dataHeader;
 		pkt->RemoveHeader(dataHeader);
+		uint16_t senderId = dataHeader.getSenderId();
+		NS_LOG_INFO("This packet is from Node "<< senderId << " to Node " << m_nodeId);
 
 		for(uint32_t i = 0; i < m_pktsSent.size(); i++){
 			if(m_pktsSent[i] == dataHeader.getPacketId()){
@@ -82,6 +84,7 @@ UanRoutingDBR::Recv(Ptr<Packet> p, const UanAddress &dest)
 
 		if (m_depth == 0) {
 			UanRoutingDBR::sinkRecvDataNum++;
+			NS_LOG_INFO("sink " << m_nodeId << " receive data");
 			m_pktsSent.push_back(dataHeader.getPacketId());
 			return true;
 		} else {
@@ -94,7 +97,7 @@ UanRoutingDBR::Recv(Ptr<Packet> p, const UanAddress &dest)
 			UanRoutingDBR::recvDataNum++;
 			if (dataHeader.getDepth() - m_depth >= dataHeader.getDeltaDepth()) {
 				double deltaDepth = dataHeader.getDepth() - m_depth;
-				double waitTime = 10 * (1-deltaDepth/(double)2000);
+				double waitTime = 10 * (1-deltaDepth/(double)500) * (1-deltaDepth/(double)500);
 				forwardPacket(p, waitTime);
 				return true;
 			}
@@ -111,6 +114,10 @@ UanRoutingDBR::forwardPacket(Ptr<Packet> p, double waitTime)
 	p->RemoveHeader(routingHeader);
 	DBRDataHeader dataHeader;
 	p->RemoveHeader(dataHeader);
+	uint16_t currentHop = dataHeader.getHop();
+	uint16_t currentPktSeq = dataHeader.getPacketId();
+
+	dataHeader.setHop(currentHop + 1);
 	dataHeader.setSenderId(m_nodeId);
 	dataHeader.setDepth(m_depth);
 	p->AddHeader(dataHeader);
@@ -119,13 +126,16 @@ UanRoutingDBR::forwardPacket(Ptr<Packet> p, double waitTime)
 	routingHeader.SetDAddr(UanAddress::GetBroadcast());
 	p->AddHeader(routingHeader);
 	UanRoutingDBR::sendDataNum++;
-	EventId eventId = Simulator::Schedule(Seconds(waitTime), &UanRoutingDBR::SendData, this, p);
+	EventId eventId = Simulator::Schedule(Seconds(waitTime), &UanRoutingDBR::SendData, this, p, currentPktSeq, currentHop);
 	m_pktsToBeSend.insert(pair<uint16_t, EventId>(dataHeader.getPacketId(), eventId));
 }
 
 void
-UanRoutingDBR::SendData(Ptr<Packet> p)
+UanRoutingDBR::SendData(Ptr<Packet> p, uint16_t currentPktSeq, uint16_t currentHop)
 {
+	map<int, int> currentPktMap = UanRoutingDBR::packetSituation.at(currentPktSeq-1);
+	currentPktMap[currentHop] = m_nodeId;
+
 	SendDown(p, UanAddress::GetBroadcast(), Seconds(0));
 	UanRoutingHeader routingHeader;
 	p->RemoveHeader(routingHeader);

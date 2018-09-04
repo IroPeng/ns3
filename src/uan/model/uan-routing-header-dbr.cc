@@ -17,9 +17,10 @@ NS_LOG_COMPONENT_DEFINE("DBRHeader");
 
 NS_OBJECT_ENSURE_REGISTERED(DBRDataHeader);
 
-DBRDataHeader::DBRDataHeader(uint16_t senderId, uint16_t packetId, uint16_t depth, uint16_t deltaDepth)
+DBRDataHeader::DBRDataHeader(uint16_t senderId, uint16_t packetId, uint16_t depth, uint16_t deltaDepth, uint16_t hop)
 	:m_senderId(senderId),
 	 m_packetId(packetId),
+	 m_hop(hop),
 	 m_depth(depth),
 	 m_deltaDepth(deltaDepth)
 {
@@ -50,7 +51,7 @@ DBRDataHeader::GetInstanceTypeId() const
 uint32_t
 DBRDataHeader::GetSerializedSize() const
 {
-	return sizeof(uint16_t) * 4;
+	return sizeof(uint16_t) * 5;
 }
 
 void
@@ -61,6 +62,7 @@ DBRDataHeader::Serialize(Buffer::Iterator start) const
 	start.WriteHtonU16(m_packetId);
 	start.WriteHtonU16(m_depth);
 	start.WriteHtonU16(m_deltaDepth);
+	start.WriteHtonU16(m_hop);
 }
 
 uint32_t
@@ -73,6 +75,7 @@ DBRDataHeader::Deserialize(Buffer::Iterator start)
 	m_packetId = i.ReadNtohU16();
 	m_depth = i.ReadNtohU16();
 	m_deltaDepth = i.ReadNtohU16();
+	m_hop = i.ReadNtohU16();
 
 	uint32_t dist = i.GetDistanceFrom(start);
 	NS_ASSERT(dist == GetSerializedSize());
